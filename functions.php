@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', 'wp_scripts_with_jquery' );
 //don't show admin bar on website, only on admin screen
 show_admin_bar(false);
 
+require_once('wp_bootstrap_navwalker.php');
 
 //show menu on wordpress admin screen (Appearance > Menus)
 function register_my_menu() {

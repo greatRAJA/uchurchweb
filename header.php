@@ -36,10 +36,20 @@
 					</div>	
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav pull-right">
-							<li><a href="/wordpress/index.php/we-are">We Are</a></li>
-							<li><a href="/wordpress/index.php/get-involved">Get Involved</a></li>
-							<li><a href="/wordpress/index.php/blog-2">Blog</a></li>
-							<li><a href="/wordpress/index.php/give">Give</a></li>
+						<?php
+							wp_nav_menu( array(
+								'menu'              => 'primary',
+								'theme_location'    => 'header-menu',
+								'depth'             => 2,
+								'container'         => 'div',
+								'container_class'   => 'collapse navbar-collapse',
+								'container_id'      => 'bs-example-navbar-collapse-1',
+								'menu_class'        => 'nav navbar-nav',
+								'echo'				=> 'false',
+								'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+								'walker'            => new wp_bootstrap_navwalker())
+							);
+						?>
 						</ul>
 					</div>
 				</div>
