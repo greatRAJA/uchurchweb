@@ -22,7 +22,7 @@
 		<?php } ?>
 		
 		<!-- navigation bar -->
-		<!--<div class="nav-container">-->
+		<div class="nav-container">
 			<nav class="navbar navbar-default navigation" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
@@ -36,7 +36,7 @@
 							<img src="<?php bloginfo('template_url'); ?>/img/UCHURCH.png" alt="lansing church" />
 						</a>
 					</div>	
-					<ul class="nav navbar-nav pull-right">
+					<ul class="pull-right">
 					<?php
 						wp_nav_menu( array(
 							'menu'              => 'primary',
@@ -55,6 +55,6 @@
 
 				</div>
 			</nav>
-		<!--</div>-->
+		</div>
 
 		<div><!-- begin body -->
