@@ -22,8 +22,8 @@
 		<?php } ?>
 		
 		<!-- navigation bar -->
-		<div class="nav-container">
-			<div class="navbar navbar-default navigation" role="navigation">
+		<!--<div class="nav-container">-->
+			<nav class="navbar navbar-default navigation" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -32,28 +32,29 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="brand navbar-brand" "href="www.google.com"><img src="<?php bloginfo('template_url'); ?>/img/UCHURCH.png"></a><!-- TODO anchor not working-->
+						<a class="navbar-brand" href="<?php echo site_url();?>">
+							<img src="<?php bloginfo('template_url'); ?>/img/UCHURCH.png" alt="lansing church" />
+						</a>
 					</div>	
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav pull-right">
-						<?php
-							wp_nav_menu( array(
-								'menu'              => 'primary',
-								'theme_location'    => 'header-menu',
-								'depth'             => 2,
-								'container'         => 'div',
-								'container_class'   => 'collapse navbar-collapse',
-								'container_id'      => 'bs-example-navbar-collapse-1',
-								'menu_class'        => 'nav navbar-nav',
-								'echo'				=> 'false',
-								'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-								'walker'            => new wp_bootstrap_navwalker())
-							);
-						?>
-						</ul>
-					</div>
+					<ul class="nav navbar-nav pull-right">
+					<?php
+						wp_nav_menu( array(
+							'menu'              => 'primary',
+							'theme_location'    => 'header-menu',
+							'depth'             => 2,
+							'container'         => 'div',
+							'container_class'   => 'collapse navbar-collapse',
+							'container_id'      => 'bs-example-navbar-collapse-1',
+							'menu_class'        => 'nav navbar-nav',
+							'echo'				=> 'false',
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'walker'            => new wp_bootstrap_navwalker())
+						);
+					?>
+					</ul>
+
 				</div>
-			</div>
-		</div>
+			</nav>
+		<!--</div>-->
 
 		<div><!-- begin body -->
