@@ -1,0 +1,83 @@
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+}
+.hsContent {
+    max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0 8%;
+    text-align: center
+}
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header .bcg {
+    background-image: url('../img/caregroup.png');
+    height: 800px;
+}
+
+#quote-1 .bcg {
+    background-image: url('../img/sanctuary.jpg');
+}
+
+#quote-2 .bcg {
+    background-image: url('../img/caregroup.png');
+}
+
+#get-involved-intro .bcg {
+    background-image: url('../img/sanctuary.jpg');
+}
+
+.get-involved-quote {
+	font-size:30px;
+}
+
+#asf .bcg {
+    background-image: url('../img/caregroup.png');
+}
+
+#prayer .bcg {
+    background-image: url('../img/sanctuary.jpg');
+}
+
+#caregroups .bcg {
+    background-image: url('../img/caregroup.png');
+}
+
+.ugreen {
+	color:#186030;
+}
+
+.description {
+	min-height:400px;
+}
+
+body {
+	background-color:#E8E8E8;
+}
