@@ -4,7 +4,7 @@
   <hr>
 	<div class="container">
 		<div class="col-md-4">
-			<img id="adventist-logo" src="<?php bloginfo('template_url'); ?>/images/AdventistLogo.png"/>
+			<img id="adventist-logo" src="<?php bloginfo('template_url'); ?>/img/AdventistLogo.png"/>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="col-md-4">
