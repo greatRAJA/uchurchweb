@@ -13,6 +13,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
 */
 @import url('bootstrap/css/bootstrap.css');
+@import url('css/fullcalendar.css');
 @import url('css/stylesheet.css');
 
 ul.footer
@@ -37,5 +38,9 @@ ul.footer
 	clear:both;
 	text-align: center;
 	padding-top: 25px;
-	
 }
+
+#calendar {
+	width: 900px;
+	margin: 0 auto;
+	}
