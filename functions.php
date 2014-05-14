@@ -8,13 +8,16 @@ function wp_scripts_with_jquery()
 	wp_register_script( '-main', get_template_directory_uri() . '/js/_main.js');
 	wp_register_script( 'skroller-main', get_template_directory_uri() . '/js/main.js');
 	wp_register_script( 'waypoints', get_template_directory_uri() . '/js/waypoints.js');
+	wp_register_script( 'full-calendar', get_template_directory_uri() . '/js/fullcalendar.js');
+	wp_register_script( 'google-calendar', get_template_directory_uri() . '/js/gcal.js');
 	// For either a plugin or a theme, you can then enqueue the script:
 	wp_enqueue_script( 'custom-script' );
 	wp_enqueue_script( 'skroller' );
 	wp_enqueue_script( '-main');
 	wp_enqueue_script( 'skroller-main');
 	wp_enqueue_script( 'waypoints');
-
+	wp_enqueue_script( 'full-calendar');
+	wp_enqueue_script( 'google-calendar');
 }
 add_action( 'wp_enqueue_scripts', 'wp_scripts_with_jquery' );
 
