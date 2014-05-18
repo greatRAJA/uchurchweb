@@ -24,9 +24,19 @@ jQuery(document).ready(function($) {
 		header: {
 			left: 'prev,next today',
 			center: 'title',
-			right: 'month,basicWeek,basicDay'
+			right: 'month,agendaWeek,agendaDay'
 		},
 		events: 'https://www.google.com/calendar/feeds/uchurchsda%40gmail.com/public/basic'
+	});
+	
+	$(window).resize(function(){
+		if($(window).width() <= 767) {
+			$('#calendar').fullCalendar('changeView', 'agendaDay');
+		} else if($(window).width() <= 990) {
+			$('#calendar').fullCalendar('changeView', 'agendaWeek');
+		} else {
+			$('#calendar').fullCalendar('changeView', 'month');
+		}
 	});
 });
 
