@@ -2,7 +2,7 @@
     display: table;
     table-layout: fixed;
     width: 100%;
-    min-height: 400px;
+    height: 100%;
     overflow: hidden;
     position: relative;
     opacity: 0;
@@ -37,10 +37,9 @@
 
 #header .bcg {
     background-image: url('../img/caregroup.png');
-    height: 800px;
 }
 
-#quote-1 .bcg {
+#we-are-forgiven .bcg {
     background-image: url('../img/sanctuary.jpg');
 }
 
@@ -74,8 +73,4 @@
 
 .description {
 	min-height:400px;
-}
-
-body {
-	background-color:#E8E8E8;
 }

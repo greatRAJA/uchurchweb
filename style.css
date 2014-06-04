@@ -12,9 +12,11 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
 This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
 */
-@import url('bootstrap/css/bootstrap.css');
+@import url('css/bootstrap.css');
 @import url('css/fullcalendar.css');
 @import url('css/stylesheet.css');
+@import url('css/parallax.css');
+@import url('css/normalize.css');
 
 ul.footer
 {
@@ -44,3 +46,13 @@ ul.footer
 	width: 100%;
 	margin: 0 auto;
 	}
+
+.header {
+  font-size:30px;
+}
+
+.home-img {
+  	max-width: 100%;
+    height: auto;
+	width: auto\9; /* ie8 */
+}
