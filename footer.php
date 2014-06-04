@@ -4,7 +4,7 @@
   <hr>
 	<div class="container">
 		<div class="col-md-4">
-			<img id="adventist-logo" src="<?php bloginfo('template_url'); ?>/img/AdventistLogo.png"/>
+			<a href="http://www.adventist.org/"><img id="adventist-logo" src="<?php bloginfo('template_url'); ?>/img/AdventistLogo.png"/></a>
 		</div>
 		<div class="verticalLine"></div>
 		<div class="col-md-4">
@@ -22,7 +22,6 @@
 				<li><a href="http://www.bonders.org/">Bonders</a></li>
 				<li><a href="http://www.teamrevo.co/">Team Revolution</a></li>
 				<li><a href="http://www.misda.org/">Michigan Conference</a></li>
-				<li><a href="http://www.adventist.org/">Seventh-Day Adventist World Church</a></li>
 			</ul>
 		</div>
 		<div id="postscript">
