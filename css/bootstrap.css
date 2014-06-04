@@ -2007,7 +2007,6 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3647,7 +3646,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+	/*Sam's edit*/
+    /*border-radius: 4px; */
   }
 }
 @media (min-width: 768px) {
