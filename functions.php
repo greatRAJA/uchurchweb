@@ -39,4 +39,14 @@ if ( function_exists('register_sidebar') )
 		'before_title' => '<h4>',
 		'after_title' => '</h4>',
 	));
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+
+function wpse_wpautop_nobr( $content ) {
+    return wpautop( $content, false );
+}
+
+add_filter( 'the_content', 'wpse_wpautop_nobr' );
+add_filter( 'the_excerpt', 'wpse_wpautop_nobr' );
 ?>
