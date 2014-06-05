@@ -22,8 +22,7 @@
 		<?php } ?>
 		
 		<!-- navigation bar -->
-		<div class="nav-container">
-			<nav class="navbar navbar-default navigation" role="navigation">
+			<nav class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -55,6 +54,5 @@
 
 				</div>
 			</nav>
-		</div>
 
 		<div><!-- begin body -->
