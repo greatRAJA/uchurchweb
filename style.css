@@ -1,39 +1,79 @@
 /*
-Theme Name: uchurch
+Theme Name: UCHURCH
 Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
-Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Description: A theme for the uchurch sda congregation in East Lansing, MI
 Author: Sam Nadarajan
 Author URI: http://teamtreehouse.com/
 Version: 1.0
 Tags: responsive, white, bootstrap
-
-License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
-License URI: http://creativecommons.org/licenses/by-sa/3.0/
-
-This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
 */
 @import url('css/bootstrap.css');
 @import url('css/fullcalendar.css');
-@import url('css/stylesheet.css');
-@import url('css/parallax.css');
-@import url('css/normalize.css');
 
-ul.footer
-{
-    list-style-type: none;
-	padding:0; 
-	margin:0;
+body {
+	padding-top: 51px;
+}
+@media (max-width: 980px) {
+	body {
+		padding-top: 0;
+	}
 }
 
+/*shaded section css mainly for home page */
+.content-section {
+	padding:75px 20px 75px;
+	width:100%;
+}
+
+.content-section-dark {
+	background:#F6F6F6;
+}
+
+.content-section-light {
+	background:#FFFFFF; 
+}
+
+.content-image {
+	width:360px;
+	max-height:200px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width:100%;
+	height:auto;
+}
+
+.remove-top-margin {
+	margin-top:0;
+}
+
+.remove-bottom-margin {
+	margin-bottom:0;
+}
+
+.relative {
+  position:relative;
+}
+
+/*background top image for home page*/
+.header-img {
+	width:100%;
+	height:auto;
+	max-height:75%;
+}
+
+#home-map {
+	position: absolute;
+	top:100px;
+	left:100px;
+}
+  
+/*footer image*/
 #adventist-logo {
 	display: block;
     margin-left: auto;
     margin-right: auto;
 	height:150px;
-}
-
-.footer-font {
-	color:white;
 }
 
 #postscript {
@@ -42,17 +82,12 @@ ul.footer
 	padding-top: 25px;
 }
 
+/*events calendar */
 #calendar {
 	width: 100%;
 	margin: 0 auto;
-	}
-
-.header {
-  font-size:30px;
 }
 
-.home-img {
-  	max-width: 100%;
-    height: auto;
-	width: auto\9; /* ie8 */
+#blog-post {
+	border-color:red;
 }

@@ -22,37 +22,40 @@
 		<?php } ?>
 		
 		<!-- navigation bar -->
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="<?php echo site_url();?>">
-							<img src="<?php bloginfo('template_url'); ?>/img/UCHURCH.png" alt="lansing church" />
-						</a>
-					</div>	
-					<ul class="pull-right">
+		<nav class="navbar navbar-default navbar-fixed-top remove-bottom-margin" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/UCHURCH.png"/></a>
+				</div>
+				<ul class="pull-right">
 					<?php
 						wp_nav_menu( array(
-							'menu'              => 'primary',
-							'theme_location'    => 'header-menu',
-							'depth'             => 2,
-							'container'         => 'div',
-							'container_class'   => 'collapse navbar-collapse',
-							'container_id'      => 'bs-example-navbar-collapse-1',
-							'menu_class'        => 'nav navbar-nav',
-							'echo'				=> 'false',
-							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-							'walker'            => new wp_bootstrap_navwalker())
+						'menu'              => 'primary',
+						'theme_location'    => 'header-menu',
+						'depth'             => 2,
+						'container'         => 'div',
+						'container_class'   => 'collapse navbar-collapse',
+						'container_id'      => 'bs-example-navbar-collapse-1',
+						'menu_class'        => 'nav navbar-nav',
+						'echo'				=> 'false',
+						'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+						'walker'            => new wp_bootstrap_navwalker())
 						);
 					?>
+				</ul>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
 					</ul>
-
-				</div>
-			</nav>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
 
 		<div><!-- begin body -->

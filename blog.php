@@ -13,8 +13,10 @@
 				$wp_query->query('showposts=10' . '&paged='.$paged);
 				while ($wp_query->have_posts()) : $wp_query->the_post(); 
 			?>
-				<h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
-				<?php the_excerpt(); ?>
+			
+			<h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
+			<p id="blog-post"><?php the_excerpt(); ?></p>
+			
 			<?php endwhile; ?>
 			<?php if ($paged > 1) { ?>
 				<nav id="nav-posts">
