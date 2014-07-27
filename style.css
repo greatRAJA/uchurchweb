@@ -21,16 +21,19 @@ body {
 
 /*shaded section css mainly for home page */
 .content-section {
-	padding:75px 20px 75px;
-	width:100%;
+  padding:75px 75px;
 }
 
 .content-section-dark {
-	background:#F6F6F6;
+  background:#F6F6F6;
 }
 
 .content-section-light {
-	background:#FFFFFF; 
+  background:#FFFFFF; 
+}
+
+.disabled {
+	display:none;
 }
 
 .content-image {
@@ -55,11 +58,24 @@ body {
   position:relative;
 }
 
+#content-latest {
+	max-height:10em;
+}
+
+img .latest-thumbnail {
+	max-height:200px;
+}
+
 /*background top image for home page*/
-.header-img {
-	width:100%;
-	height:auto;
-	max-height:75%;
+.header-image {
+  background-image: url('http://unrestrictedstock.com/wp-content/uploads/2010/12/P1040872.jpg');
+  background-size: 100%;
+  padding:20px;
+  background-repeat: no-repeat;
+}
+
+.white {
+  color:white;
 }
 
 #home-map {
