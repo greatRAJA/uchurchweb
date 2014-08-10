@@ -6,6 +6,7 @@
 <?php get_header(); ?>
 
 	<div class="container">
+		<p class="white">TEST</p>
 		<div class="col-md-8">
 			<?php // Display blog posts on any page @ http://m0n.co/l
 				$temp = $wp_query; $wp_query= null;

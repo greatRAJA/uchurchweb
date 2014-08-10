@@ -7,8 +7,11 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
+		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />
+
 		<!-- CSS -->
-		<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+		<!--<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">-->
+
 		<!-- javascript -->
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php wp_head(); ?>

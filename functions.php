@@ -7,11 +7,20 @@ function wp_scripts_with_jquery()
 	wp_register_script( 'full-calendar', get_template_directory_uri() . '/js/fullcalendar.js');
 	wp_register_script( 'google-calendar', get_template_directory_uri() . '/js/gcal.js');
 	wp_register_script( 'main', get_template_directory_uri() . '/js/main.js');
+    wp_register_style( 'style', get_template_directory_uri() . '/style.css');
+    wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
+    wp_register_style( 'fullcalendar', get_template_directory_uri() . '/css/fullcalendar.css');
+    wp_register_style( 'gravityforms', get_template_directory_uri() . '/css/gravityforms.css');
+    
 	// For either a plugin or a theme, you can then enqueue the script:
 	wp_enqueue_script( 'custom-script' );
 	wp_enqueue_script( 'full-calendar');
 	wp_enqueue_script( 'google-calendar');
 	wp_enqueue_script( 'main');
+	wp_enqueue_style('style');
+	wp_enqueue_style('bootstrap');
+	wp_enqueue_style('fullcalendar');
+	wp_enqueue_style('gravityforms');
 }
 add_action( 'wp_enqueue_scripts', 'wp_scripts_with_jquery' );
 

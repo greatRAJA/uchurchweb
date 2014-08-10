@@ -1,14 +1,11 @@
 /*
 Theme Name: UCHURCH
-Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
 Description: A theme for the uchurch sda congregation in East Lansing, MI
 Author: Sam Nadarajan
-Author URI: http://teamtreehouse.com/
+Author URI: 
 Version: 1.0
 Tags: responsive, white, bootstrap
 */
-@import url('css/bootstrap.css');
-@import url('css/fullcalendar.css');
 
 body {
 	padding-top: 51px;
@@ -54,16 +51,20 @@ body {
 	margin-bottom:0;
 }
 
-.relative {
-  position:relative;
+.add-padding-top {
+	padding-top: 25px;
+}
+
+.add-padding-bottom {
+	padding-bottom:25px;
+}
+
+.add-fifteen-bottom {
+	padding-bottom:15px;
 }
 
 #content-latest {
 	max-height:10em;
-}
-
-img .latest-thumbnail {
-	max-height:200px;
 }
 
 /*background top image for home page*/
@@ -72,6 +73,11 @@ img .latest-thumbnail {
   background-size: 100%;
   padding:20px;
   background-repeat: no-repeat;
+}
+
+.latest-img {
+	padding-top:62px;
+	padding-bottom:62px;
 }
 
 .white {
@@ -102,8 +108,31 @@ img .latest-thumbnail {
 #calendar {
 	width: 100%;
 	margin: 0 auto;
+	padding-top:10px;
 }
 
 #blog-post {
 	border-color:red;
+}
+
+/*footer css*/
+#footer {
+	background-color: black;
+	padding-top:25px;
+}
+
+ul,li { 
+	list-style-type: none;
+	list-style-position:inside;
+	margin:0;
+	padding:0; 
+}
+
+/*Google Calendar Events CSS*/
+.gce-page-list .gce-list .gce-list-event {
+	background-color:#186030;
+	padding-top:3px;
+	padding-left:5px;
+	padding-bottom:3px;
+	padding-right:3px;
 }
