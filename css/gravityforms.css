@@ -55,7 +55,10 @@ textarea.ginput_container input, textarea.ginput_container select, textarea.ginp
   height: auto; }
 
 .ginput_container textarea {
-  height: auto; }
+  height:auto;
+  max-height:100px;
+}
+  
 
 .gform_button {
   display: inline-block;

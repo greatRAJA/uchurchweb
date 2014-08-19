@@ -7,6 +7,7 @@ Version: 1.0
 Tags: responsive, white, bootstrap
 */
 
+
 body {
 	padding-top: 51px;
 }
@@ -68,11 +69,10 @@ body {
 }
 
 /*background top image for home page*/
-.header-image {
-  background-image: url('http://unrestrictedstock.com/wp-content/uploads/2010/12/P1040872.jpg');
-  background-size: 100%;
-  padding:20px;
-  background-repeat: no-repeat;
+.header-img {
+  position:relative;
+  height:auto;
+  max-width:100%;
 }
 
 .latest-img {
@@ -119,6 +119,7 @@ body {
 #footer {
 	background-color: black;
 	padding-top:25px;
+	width:100%;
 }
 
 ul,li { 
@@ -126,6 +127,10 @@ ul,li {
 	list-style-position:inside;
 	margin:0;
 	padding:0; 
+}
+
+.add-padding-top {
+	padding-top:15px;
 }
 
 /*Google Calendar Events CSS*/
