@@ -1,6 +1,7 @@
       <!-- /container -->
 	  
 	</body>
+	
 	<div id="footer" class="container-fluid">
 		<div class="row add-padding-bottom">
 			<div class="col-md-2 col-md-offset-1 col-sm-3">

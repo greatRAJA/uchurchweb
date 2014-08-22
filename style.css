@@ -8,9 +8,9 @@ Tags: responsive, white, bootstrap
 */
 
 
-body {
+/*body {
 	padding-top: 51px;
-}
+}*/
 @media (max-width: 980px) {
 	body {
 		padding-top: 0;
@@ -30,10 +30,6 @@ body {
   background:#FFFFFF; 
 }
 
-.disabled {
-	display:none;
-}
-
 .content-image {
 	width:360px;
 	max-height:200px;
@@ -42,6 +38,17 @@ body {
 	margin-right: auto;
 	max-width:100%;
 	height:auto;
+}
+
+.image-position {
+	position: relative; 
+	width: 100%; /* for IE 6 */
+}
+
+.text-overlay {
+	position: absolute; 
+	top:0px;
+	left:0px;
 }
 
 .remove-top-margin {
